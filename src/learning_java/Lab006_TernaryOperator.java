@@ -12,12 +12,30 @@ public class Lab006_TernaryOperator {
     F: 0-59
 
      */
-        int marks = 65;
+        int marks = 5;
         String score = (marks <= 59) ? "F" : (marks < 70 && marks > 59 ) ? "D" :
                 (marks < 80 && marks > 69 ) ? "C" : (marks < 90 && marks > 79 ) ? "B" :
                         (marks <= 100 && marks > 89 ) ? "A" : "Input not valide";
         System.out.println(score);
+        if(marks <= 100 && marks >= 90 )
+            System.out.println("Grade A");
+        else if (marks <= 89 && marks >= 80 )
+            System.out.println("Grade B");
+        else if(marks < 80 && marks > 69 )
+            System.out.println("Grade C");
+        else if (marks < 70 && marks > 59 )
+            System.out.println("Grade D");
+        else if(marks <= 59 )
+            System.out.println("Grade F");
+        else
+            System.out.println("Number is not valid");
 
+
+
+        //Finding the Largest of Three Numbers a,b,c using the Ternary Operator.
+        int a=10,b=25,c=15;
+        int largestNumber = (a>=b && a>=c) ? a : (b>=a && b>=c) ? b : c;
+        System.out.println(largestNumber);
     }
 
 }
