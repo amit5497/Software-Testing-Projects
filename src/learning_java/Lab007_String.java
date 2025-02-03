@@ -7,7 +7,8 @@ public class Lab007_String {
         //checkStringIsPalidrome(str);
 
         //checkCountOfVowelConsnants(str);
-        checkTheNumber();
+        //checkTheNumber();
+
     }
 
     private static void checkTheNumber() {

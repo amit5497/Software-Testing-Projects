@@ -6,11 +6,24 @@ import java.util.HashMap;
 public class Interview_Array {
    public static void main(String args[]){
        // Print frequency of number in arrays
-       int[] arr ={1,4,4,1,10,12,1};
+       //int[] arr ={1,4,4,1,10,12,1};
        //frequencyForNumber(arr);
        String str ="amkmar";
        //frequencyForString(str);
        //secondHight();
+
+       int[] arr = {10, 20, 30, 30, 5, 25};
+       int highest = arr[0];    // Initialize with the smallest value
+       int secondHighest = arr[1];
+
+       for (int value : arr) {
+           if (value > highest) {
+               secondHighest = highest;    // Update second-highest
+               highest = value;            // Update highest
+           } else if (value > secondHighest && value != highest) {
+               secondHighest = value;      // Update second-highest only
+           }
+       }
 
 
 
